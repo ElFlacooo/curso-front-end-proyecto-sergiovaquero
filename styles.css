@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+BE+WAL+Guides&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,450;1,450&family=Playwrite+BE+WAL+Guides&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Caveat", cursive;
+    
+}
+
+
+
+body {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #e8dfce;
+    box-shadow: 0 5px 15px;
+    z-index: 999;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 850;
+    color: #bc532c;
+}
+
+.navbar a:hover {
+    color: #66b5b3;
+}
+
+.main {
+    background-color: #e8dfce;
+}
+
+.footer {
+    background-color: #e8dfce;
+}
+
+/* Sección del body */
+
+.frases {
+    background-image: url('./img/foto-frase.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 5%;
+}
+
+.frases .logo-transparente {
+    display: flex;
+    width: 100%;
+    position: center;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    z-index: 1;
+}
+
+.frases .frases-iniciales {
+    width: 100%;
+    height: 40%;
+    font-size: 2rem;
+    display: flex;
+    position: center;
+    /* border: 5px solid black; */
+    flex-direction: column;
+    align-items: center;
+    color: #e8dfce;
+    text-align: center;
+    z-index: 1;
+}
+
+.about {
+    background-color: #bc532c;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vp;
+    width: 100%;
+    padding: 9%;
+}
+
+.about .foto-about {
+    width: 50%;
+}
+
+.about .foto-about img {
+    width: 100%;
+    height: 100%;
+    position: center;
+    border: 10px solid #e8dfce;
+    object-fit: cover;
+}
+
+.texto-about {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.titulo {
+    display: flex;
+    font-size: 5rem;
+    justify-content: center;
+    color: #e8dfce;
+}
+
+.descripcion-about {
+    display: flex;
+    font-size: 2.3rem;
+    justify-content: center;
+    color: #e8dfce;
+}
