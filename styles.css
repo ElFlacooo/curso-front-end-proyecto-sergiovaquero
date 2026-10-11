@@ -9,8 +9,6 @@
     
 }
 
-
-
 body {
     width: 100%;
 }
@@ -19,9 +17,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 100px;
+    padding-block: 1%;
+    padding-inline: 4% 8%;
     background-color: #e8dfce;
-    box-shadow: 0 5px 15px;
+    box-shadow: 0 5px 10px;
     z-index: 999;
     position: sticky;
     top: 0px;
@@ -98,7 +97,7 @@ body {
     z-index: 1;
 }
 
-.about {
+.nosotros {
     background-color: #bc532c;
     display: flex;
     justify-content: space-evenly;
@@ -107,11 +106,11 @@ body {
     padding: 9%;
 }
 
-.about .foto-about {
+.nosotros .foto-nosotros {
     width: 50%;
 }
 
-.about .foto-about img {
+.nosotros .foto-nosotros img {
     width: 100%;
     height: 100%;
     position: center;
@@ -119,23 +118,224 @@ body {
     object-fit: cover;
 }
 
-.texto-about {
+.texto-nosotros {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-
 }
 
-.titulo {
+.titulo-claro {
     display: flex;
     font-size: 5rem;
     justify-content: center;
     color: #e8dfce;
 }
 
-.descripcion-about {
+.titulo-obscuro {
+    display: flex;
+    font-size: 5rem;
+    justify-content: center;
+    color: #bc532c;
+}
+
+.descripcion-nosotros {
     display: flex;
     font-size: 2.3rem;
     justify-content: center;
     color: #e8dfce;
+}
+
+.mensaje-inicial-contacto {
+    background-color: #e8dfce;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.foto-formulario {
+    display: flex;
+    width: 45%;
+    border: 2px solid #bc532c;
+}
+
+.seccion-formulario-de-contacto {
+    background-color: #e8dfce;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vp;
+    width: 100%;
+    padding: 5%;
+    /* border: 5px solid black; */
+}
+
+.formulario {
+    display: flex;
+    position: sticky;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 45%;
+    padding: 5%;
+    /* border: 5px solid black; */
+}
+
+.formulario h2 {
+    color: #bc532c;
+    font-size: 1.5rem;
+}
+
+.form select, input, textarea {
+    display: flex;
+    position: sticky;
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.5rem;
+    padding: 1%;
+    margin-bottom: 3%;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #bc532c;
+    border: 2px solid #bc532c;
+}
+
+select option[disabled] {
+    color: #d1be9d;
+}
+
+textarea {
+    display: flex;
+    height: 30vh;
+}
+
+form ::placeholder {
+    color: #d1be9d;
+}
+
+.form button {
+    display: flex;
+    width: 25%;
+    height: 7%;
+    color: #bc532c;
+    font-size: 2.3rem;
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #bc532c;
+}
+
+.contenedor-boton {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 150vh;
+    padding: 5vh;
+}
+
+.frase-servicios {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 5vh;
+    font-size: 2.3rem;
+    color: #bc532c;
+}
+
+.contenedor-servicios {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 2%;
+    row-gap: 4%;
+    width: 90%;
+    height: 90%;
+    /* border: 5px solid green; */
+}
+
+.contenedor-servicios img {
+    width: 100%;
+    height: auto;
+}
+
+.texto-en-tarjeta {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 3%;
+    color: #bc532c;
+}
+
+.texto-en-tarjeta h2 {
+    margin: 0;
+    width: auto;
+    font-size: 1.5rem;
+}
+
+.boton-tarjeta {
+    font-size: 1.5rem;
+    padding-inline: 3%;
+    color: #bc532c;
+    background-color: #fff;
+}
+
+.sesion-retrato {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 1 / 3;
+    padding: auto;
+    border: 2px solid #bc532c;
+    border-radius: 10%;
+}
+
+.fotografia-gastronomica {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 3 / 5;
+    padding: auto;
+    border: 2px solid #bc532c;
+    border-radius: 10%;
+}
+
+.fotografia-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 5 / 7;
+    padding: auto;
+    border: 2px solid #bc532c;
+    border-radius: 10%;
+}
+
+.fotografia-locacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 2 / 4;
+    padding: auto;
+    border: 2px solid #bc532c;
+    border-radius: 10%;
+
+}
+
+.covertura-eventos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 4 / 6;
+    padding: auto;
+    border: 2px solid #bc532c;
+    border-radius: 10%;
 }
