@@ -15,13 +15,16 @@
         <div>
             <ul class="navbar">
                 <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="">Nosotros</a>
+                </li>
+                <li>
+                    <a href="">Portfolio</a>
+                </li>
+                <li>
                     <a href="">Servicios</a>
-                </li>
-                <li>
-                    <a href="">Quienes somos</a>
-                </li>
-                <li>
-                    <a href="">Galería</a>
                 </li>
                 <li>
                     <a href="pages/contacto.html">Contacto</a>
@@ -29,5 +32,57 @@
             </ul>
         </div>
     </header>
+
+    <main>
+        <div class="mensaje-inicial-contacto">
+            <h1 class="titulo-obscuro">Dejanos tu consulta</h1>
+        </div>
+
+        <div class="seccion-formulario-de-contacto">
+            <div class="foto-formulario">
+                <img src="../img/foto de formulario de contacto.png" alt="Foto de formulario de contacto" style="width: 100%;">
+            </div>
+
+            <div class="formulario">
+                <form action="" method="post" class="form">
+                    <div>
+                        <h2>Tus datos *</h2>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+                    </div>
+
+                    <div>
+                        <h2>Correo electrónico *</h2>
+                        <input type="email" id="email" name="email" placeholder="Ejemplo@zcfotografía.com" required>
+                    </div>
+
+                    <div>
+                        <h2>Número de contacto / WhatsApp *</h2>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 9 11-1234-5678" required>
+                    </div>
+
+                    <div>
+                        <h2>¿Necesitás información de algún servicio?</h2>
+                        <select name="servicios" id="servicios">
+                            <option value="" disabled selected>Elige una opción...</option>
+                            <option value="1">Sesión de retrato</option>
+                            <option value="2">Fotografía gastronómica</option>
+                            <option value="3">Fotografía de productos</option>
+                            <option value="4">Fotografía de locación</option>
+                            <option value="5">Covertura de eventos</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <h2>¡Dejanos tu mensaje! *</h2>
+                        <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
+                    </div>
+
+                    <div class="contenedor-boton">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
