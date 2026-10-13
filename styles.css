@@ -71,6 +71,18 @@ body {
         flex-direction: column;
         gap: 10px;
     }
+
+    .navbar a {
+        font-size: 1.2rem;
+    }
+
+    .navbar li {
+        padding: 0 8px;    
+    }
+
+    .header {
+        padding-inline: 3%;
+    }
 }
 
 .main {
