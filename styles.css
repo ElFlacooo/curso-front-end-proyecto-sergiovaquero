@@ -13,7 +13,6 @@ body {
     margin: 0;
     width: 100%;
     min-height: 100vh;
-    border: 3px solid black;
 }
 
 .header {
